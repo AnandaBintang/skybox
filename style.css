@@ -1,0 +1,83 @@
+.parallax-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+}
+
+.parallax-bg {
+  background-color: grey;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center right;
+  z-index: -1;
+  min-height: 100%;
+}
+
+.parallax-section img {
+  width: 10rem;
+  margin-top: 35rem;
+}
+
+.parallax-subsection {
+  height: 70vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  position: relative;
+}
+
+.parallax-subbg {
+  background-image: url("../../assets/img/IP-mobile.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  min-height: 100%;
+}
+
+.parallax-subsection h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .parallax-bg {
+    background-image: url("../../assets/img/IP.png");
+  }
+
+  .parallax-subbg {
+    background-image: url("../../assets/img/IP.png");
+    background-position: top center;
+  }
+
+  .parallax-subsection h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 7px;
+  }
+
+  .parallax-section {
+    padding: 50px;
+  }
+
+  .parallax-section img {
+    width: 18rem;
+    margin-top: 38rem;
+  }
+}
