@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skybox | Visual Effect & Animation Company</title>
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
+
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
@@ -24,7 +23,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -57,9 +56,15 @@
     <!-- End of Navbar -->
 
     <!-- Jumbotron -->
-    <video autoplay muted loop id="myVideo">
-      <source src="./assets/header.mp4" type="video/mp4" />
-    </video>
+    <div>
+      <video autoplay muted loop id="desktop-video">
+        <source src="./assets/video/header.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop id="mobile-video">
+        <source src="./assets/video/header-mobile.mp4" type="video/mp4" />
+      </video>
+    </div>
+
     <div class="jumbotron container-fluid">
       <div class="container">
         <div class="row justify-content-center">
@@ -72,29 +77,127 @@
     <!-- End of Jumbotron -->
 
     <section id="partner">
-      <div class="p-5 mx-5 d-flex justify-content-center">
-        <img
-          src="./assets/logo/Animation Factory.png"
-          alt="Animation Factory"
-        />
-        <img src="./assets/logo/Chiyo.png" alt="Chiyo Creative Fun House" />
-        <img src="./assets/logo/Heartz.png" alt="Heartz" />
-        <img src="./assets/logo/Hening.png" alt="Hening Animation" />
-        <img src="./assets/logo/Meraki.png" alt="Meraki Studio" />
-        <img src="./assets/logo/Monohero.png" alt="Monohero" />
-        <img src="./assets/logo/Orro.png" alt="Orro Studio" />
-        <img src="./assets/logo/Roleplay.png" alt="Roleplay Studio" />
-        <img src="./assets/logo/screenplayfilms.png" alt="Screenplay Films" />
-        <img src="./assets/logo/TNA.png" alt="TNA Studio" />
-        <img src="./assets/logo/Vidio.png" alt="Vidio.com" />
+      <div class="p-5 mx-3 row justify-content-center">
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img
+            src="./assets/logo/Animation Factory.png"
+            alt="Animation Factory"
+          />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Chiyo.png" alt="Chiyo Creative Fun House" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Heartz.png" alt="Heartz" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Hening.png" alt="Hening Animation" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Meraki.png" alt="Meraki Studio" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Monohero.png" alt="Monohero" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Orro.png" alt="Orro Studio" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Roleplay.png" alt="Roleplay Studio" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/TNA.png" alt="TNA Studio" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/screenplayfilms.png" alt="Screenplay Films" />
+        </div>
+        <div class="col-12 col-md-1 d-flex justify-content-center my-5">
+          <img src="./assets/logo/Vidio.png" alt="Vidio.com" />
+        </div>
       </div>
     </section>
 
     <section id="maps">
-      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-        <a href="https://1map.com/map-embed">1 Map</a>
+      <div style="width: 1920px; position: relative" id="desktopMaps">
+        <iframe
+          width="1920"
+          height="380"
+          src="https://maps.google.com/maps?width=1920&amp;height=380&amp;hl=en&amp;q=+(Skybox%20Digital%20Imagery)&amp;ie=UTF8&amp;t=&amp;z=5&amp;iwloc=B&amp;output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+        <div
+          style="
+            position: absolute;
+            width: 80%;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            color: #000;
+            text-align: center;
+          "
+        >
+          <small style="line-height: 1.8; font-size: 2px; background: #fff"
+            >Powered by
+            <a href="http://www.googlemapsgenerator.com/es/"
+              >Googlemapsgenerator.com/es/</a
+            >
+            &
+            <a href="https://playoldgames.org/mario-paint-smc"
+              >https://playoldgames.org/mario-paint-smc</a
+            ></small
+          >
+        </div>
+        <style>
+          #gmap_canvas img {
+            max-width: none !important;
+            background: none !important;
+          }
+        </style>
       </div>
+      <br />
+
+      <div style="width: 480px; position: relative" id="mobileMaps">
+        <iframe
+          width="480"
+          height="380"
+          src="https://maps.google.com/maps?width=480&amp;height=380&amp;hl=en&amp;q=+(Skybox%20Digital%20Imagery)&amp;ie=UTF8&amp;t=&amp;z=5&amp;iwloc=B&amp;output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+        <div
+          style="
+            position: absolute;
+            width: 80%;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            color: #000;
+            text-align: center;
+          "
+        >
+          <small style="line-height: 1.8; font-size: 2px; background: #fff"
+            >Powered by
+            <a href="http://www.googlemapsgenerator.com/fr/">gmapgen fr</a> &
+            <a href="https://snabblån5000.com/lana-8000/">låna 8000</a></small
+          >
+        </div>
+        <style>
+          #gmap_canvas img {
+            max-width: none !important;
+            background: none !important;
+          }
+        </style>
+      </div>
+      <br />
     </section>
 
     <footer>
@@ -102,18 +205,20 @@
         <div class="col-12">
           <div class="contact mx-5">
             <h5>Contact Us</h5>
-            <h5>info@skybox.ltd</h5>
+            <h5><a href="mailto:info@skybox.ltd">info@skybox.ltd</a></h5>
             <h5>Cluster Animation & Film Factory, KEK Singhasari, 65153</h5>
           </div>
         </div>
         <div class="row justify-content-between my-5">
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 d-flex justify-content-center">
             <h5 class="copyright">
-              Copyright C 2023 Skybox Digital Imagery All Rights Reserved.
+              Copyright &copy; 2023 Skybox Digital Imagery All Rights Reserved.
             </h5>
           </div>
           <div class="col-12 col-md-4">
-            <div class="social-media d-flex justify-content-end">
+            <div
+              class="social-media d-flex justify-content-md-end justify-content-center"
+            >
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="#"><i class="bi bi-instagram"></i></a>
@@ -127,43 +232,8 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      (function () {
-        var setting = {
-          height: 380,
-          width: 1920,
-          zoom: 4,
-          queryString:
-            "Roleplay Studio, Cluster Animation & Film Factory, Pasrepan, Purwoasri, Singhasari, East Java, Indonesia",
-          place_id: "ChIJyRXvmFEp1i0RVuGAvXkF47E",
-          satellite: false,
-          centerCoord: [],
-          cid: "0xb1e30579bd80e156",
-          lang: "en",
-          id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-          embed_id: "939561",
-        };
-        var d = document;
-        var s = d.createElement("script");
-        s.src = "https://1map.com/js/script-for-user.js?embed_id=939561";
-        s.async = true;
-        s.onload = function (e) {
-          window.OneMap.initMap(setting);
-        };
-        var to = d.getElementsByTagName("script")[0];
-        to.parentNode.insertBefore(s, to);
-      })();
-    </script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
