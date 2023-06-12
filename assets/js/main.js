@@ -33,3 +33,10 @@ if (mediaQuery.matches) {
   var to = d.getElementsByTagName("script")[0];
   to.parentNode.insertBefore(s, to);
 })();
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+  });
+});
